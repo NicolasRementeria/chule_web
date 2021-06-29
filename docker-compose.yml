@@ -1,4 +1,6 @@
-#https://realpython.com/dockerizing-flask-with-compose-and-machine-from-localhost-to-the-cloud/
+# https://realpython.com/dockerizing-flask-with-compose-and-machine-from-localhost-to-the-cloud/
+
+# https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose-es
 
 version: "3"
 services:
@@ -24,3 +26,7 @@ services:
     environment:
       MYSQL_DATABASE: wordpress
       MYSQL_ROOT_PASSWORD: "12345"
+
+volumes:
+  wp-content:
+  .mysql:
